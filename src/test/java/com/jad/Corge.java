@@ -4,7 +4,7 @@ public class Corge {
     private Foo foo;
 
     public Corge(Foo foo) {
-        this.foo = null;
+        this.foo = foo;
     }
 
     public Foo getFoo() {
