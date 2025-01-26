@@ -11,14 +11,15 @@ public class Foo {
 
 
     public Foo(Bar bar) {
-
+        this.graults.add(new Grault(this));
     }
 
     public void addBaz(Baz baz) {
-
+        this.bazs.add(new Baz());
     }
 
     public void addGrault() {
-
+        Grault newGrault = new Grault(this);
+        this.graults.add(newGrault);
     }
 }
