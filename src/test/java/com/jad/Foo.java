@@ -50,7 +50,7 @@ public class Foo {
         }
     }
 
-    public ArrayList<Grault> getGrault() {
+    public ArrayList<Grault> getGraults() {
         return this.graults;
     }
 
