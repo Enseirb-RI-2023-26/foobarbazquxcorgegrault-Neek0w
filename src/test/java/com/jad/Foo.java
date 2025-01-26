@@ -15,7 +15,7 @@ public class Foo {
         this.bazs = new ArrayList<>();
         this.graults = new ArrayList<>();
         this.qux = new Qux();
-        this.corge = new Corge(null);
+        this.corge = null;
     }
 
     public Bar getBar() {
@@ -39,7 +39,13 @@ public class Foo {
     }
 
     public void setCorge(Corge corge) {
+        if (this.corge != null) {
+            this.corge.setFoo(null);
+        }
         this.corge = corge;
+        if (corge != null) {
+            corge.setFoo(this);
+        }
     }
 
     public ArrayList<Grault> getGrault() {
