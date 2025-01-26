@@ -11,8 +11,4 @@ public class Grault {
     public Foo getFoo() {
         return this.foo;
     }
-
-    public void addFoo(Foo foo) {
-        this.foo = foo;
-    }
 }
