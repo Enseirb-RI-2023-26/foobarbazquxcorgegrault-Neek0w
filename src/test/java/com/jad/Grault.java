@@ -12,7 +12,7 @@ public class Grault {
         return this.foo;
     }
 
-    public void setFoo(Foo foo) {
+    public void addFoo(Foo foo) {
         this.foo = foo;
     }
 }
