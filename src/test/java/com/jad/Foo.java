@@ -17,7 +17,7 @@ public class Foo {
         this.qux = new Qux();
     }
 
-    public Bar getbar() {
+    public Bar getBar() {
         return this.bar;
     }
 
