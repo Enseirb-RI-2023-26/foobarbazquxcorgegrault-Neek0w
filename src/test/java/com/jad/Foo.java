@@ -39,19 +39,7 @@ public class Foo {
     }
 
     public void setCorge(Corge corge) {
-        if (this.corge == corge) {
-            return;
-        }
-
-        if (this.corge != null) {
-            this.corge.setFoo(null);
-        }
-
         this.corge = corge;
-        
-        if (corge != null) {
-            corge.setFoo(this);
-        }
     }
 
     public ArrayList<Grault> getGrault() {
